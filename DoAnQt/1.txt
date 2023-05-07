@@ -1,1 +1,0 @@
-<PyQt6.QtWidgets.QTextEdit object at 0x000001A3F151F490>

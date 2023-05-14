@@ -153,7 +153,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "File Path:"))
         self.btnChonFile.setText(_translate("MainWindow", "Chọn File"))
         self.btnGiaiMaChuyenViNhieuDong.setText(_translate("MainWindow", "Giải mã"))
-        self.label.setText(_translate("MainWindow", "Mã hóa văn bản bằng ChuyenViNhieuDong"))
+        self.label.setText(_translate("MainWindow", "Mã hóa văn bản bằng Chuyển vị nhiều dòng"))
         self.btnMaHoaChuyenViNhieuDong.setText(_translate("MainWindow", "Mã hóa"))
         self.btnSave.setText(_translate("MainWindow", "Lưu File"))
         self.btnBack.setText(_translate("MainWindow", "Back"))

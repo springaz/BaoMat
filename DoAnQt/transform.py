@@ -44,7 +44,7 @@ def giaima_UI():
     ui.pushButton_4.clicked.connect(giaimatrithemius_UI)
     ui.pushButton_3.clicked.connect(giaimabelasco_UI)
     ui.pushButton_5.clicked.connect(giaimachuyenvi_UI)
-    ui.btnChuyenViNhieuDong.clicked.connect(giaimachuyenvinhieudong_UI)
+    ui.pushButton_7.clicked.connect(giaimachuyenvinhieudong_UI)
     MainWindow.show()
 
 

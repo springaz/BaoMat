@@ -8,7 +8,7 @@
 
 from PyQt6 import QtCore, QtGui, QtWidgets
 import savefile as savefile, openfile as openfile
-import trithemius
+import Trithemius.trithemius as trithemius
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):

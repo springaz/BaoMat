@@ -6,6 +6,7 @@ import Ceasar.MaHoaCeasar as MaHoaCeasar, Ceasar.GiaiMaCeasar as GiaiMaCeasar
 import Vignere.MaHoaVignere as MaHoaVignere , Vignere.GiaiMaVignere as GiaiMaVignere
 import Trithemius.MaHoaTrithemius as MaHoaTrithemius, Trithemius.GiaiMaTrithemius as GiaiMaTrithemius
 import ChuyenVi.MaHoaChuyenVi as MaHoaChuyenVi, ChuyenVi.GiaiMaChuyenVi as GiaiMaChuyenVi
+import ChuyenViNhieuDong.MaHoaChuyenViNhieuDong as MaHoaChuyenViNhieuDong, ChuyenViNhieuDong.GiaiMaChuyenViNhieuDong as GiaiMaChuyenViNhieuDong
 import Belasco.MaHoaBelasco as MaHoaBelasco, Belasco.GiaiMaBelasco as GiaiMaBelasco
 
 ui=''
@@ -30,6 +31,7 @@ def mahoa_UI():
     ui.btnTrithemius.clicked.connect(mahoatrithemius_UI)
     ui.btnBelasco.clicked.connect(mahoabelasco_UI)
     ui.btnChuyenViHaiDong.clicked.connect(mahoachuyenvi_UI)
+    ui.btnChuyenViNhieuDong.clicked.connect(mahoachuyenvinhieudong_UI)
     MainWindow.show()
 
 def giaima_UI():
@@ -42,6 +44,7 @@ def giaima_UI():
     ui.btnTrithemius.clicked.connect(giaimatrithemius_UI)
     ui.btnBelasco.clicked.connect(giaimabelasco_UI)
     ui.btnChuyenViHaiDong.clicked.connect(giaimachuyenvi_UI)
+    ui.btnChuyenViNhieuDong.clicked.connect(giaimachuyenvinhieudong_UI)
     MainWindow.show()
 
 
@@ -119,6 +122,20 @@ def giaimachuyenvi_UI():
     ui.setupUi(MainWindow)
     ui.btnBack.clicked.connect(giaima_UI)
     ui.btnMaHoaChuyenVi.clicked.connect(mahoachuyenvi_UI)
+
+def mahoachuyenvinhieudong_UI():
+    global ui
+    ui = MaHoaChuyenViNhieuDong.Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    ui.btnBack.clicked.connect(mahoa_UI)
+    ui.btnGiaiMaChuyenViNhieuDong.clicked.connect(giaimachuyenvinhieudong_UI)
+
+def giaimachuyenvinhieudong_UI():
+    global ui
+    ui = GiaiMaChuyenViNhieuDong.Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    ui.btnBack.clicked.connect(giaima_UI)
+    ui.btnMaHoaChuyenViNhieuDong.clicked.connect(mahoachuyenvinhieudong_UI)
 
 mainUI() 
 sys.exit(app.exec())
